@@ -1,5 +1,5 @@
 const textElement = document.getElementById('text');
-const phrases = ["Welcome to the site", "Explore the content", "Enjoy your stay"];
+const phrases = ["Ambitious Worker ", "Creative Mind ", "Aspiring Software Developer "];
 let currentPhraseIndex = 0;
 let currentLetterIndex = 0;
 let isDeleting = false;
