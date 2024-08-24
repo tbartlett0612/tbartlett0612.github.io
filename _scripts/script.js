@@ -9,13 +9,12 @@ let delayBetweenPhrases = 1000;
 
 function type() {
     const currentPhrase = phrases[currentPhraseIndex];
-    
-    if (!isDeleting) {
-        textElement.textContent = currentPhrase.slice(0, currentLetterIndex + 1);
-        currentLetterIndex++;
+    if (isDeleting) {
+        currentLetterIndex--;
+        textElement.textContent = currentPhrase.slice(0, currentLetterIndex);
     } else {
         textElement.textContent = currentPhrase.slice(0, currentLetterIndex);
-        currentLetterIndex--;
+        currentLetterIndex++;
     }
 
     if (!isDeleting && currentLetterIndex === currentPhrase.length) {
