@@ -87,21 +87,22 @@
     </style>
 </head>
 <body>
-    <!-- Responsive NavBar -->
-    <nav class="navbar navbar-dark bg-primary navbar-expand-sm">
-        <div class="container">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#idNav"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="idNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">P</a></li>
-                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#work" class="nav-link">Work History</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
+    <!-- Floating Navigation -->
+    <nav class="navbar flex-column" id="navigation">
+        <a href="#about" class="nav-link">A</a>
+        <a href="#projects" class="nav-link">P</a>
+        <a href="#education" class="nav-link">E</a>
+        <a href="#work" class="nav-link">W</a>
+        <a href="#contact" class="nav-link">C</a>
     </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="section d-flex align-items-center">
+        <div class="container text-center">
+            <h1>Projects</h1>
+            <span id="text"></span><span class="cursor">|</span>
+        </div>
+    </section>
     
     <!-- About Me Section -->
     <section id="about" class="section d-flex text-white bg-gradient">
@@ -124,7 +125,7 @@
     <!-- Projects Section -->
     <section id="projects" class="section d-flex align-items-center">
         <div class="container text-center">
-            <h1>Projects</h1>
+            <h1>Thomas Bartlett</h1>
             <p class="lead">Showcase your projects here.</p>
         </div>
     </section>
