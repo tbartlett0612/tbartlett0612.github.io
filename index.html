@@ -87,31 +87,21 @@
     </style>
 </head>
 <body>
-    <!-- Floating Navigation -->
-    <nav class="navbar flex-column" id="navigation">
-        <a href="#about" class="nav-link">A</a>
-        <a href="#projects" class="nav-link">P</a>
-        <a href="#education" class="nav-link">E</a>
-        <a href="#work" class="nav-link">W</a>
-        <a href="#contact" class="nav-link">C</a>
-    </nav>
-
-    <!--Moblie Navigation-->
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-    
-    <!-- Intro Section -->
-    <section id="intro" class="section-intro d-flex align-items-center text-white">
-        <div class="container text-center">
-            <h1>Thomas Bartlett</h1>
-            <div class="ghost-writer">
-                <span id="text"></span><span class="cursor">|</span>
+    <!-- Responsive NavBar -->
+    <nav class="navbar navbar-dark bg-primary navbar-expand-sm">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#idNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="idNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">P</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link">Work History</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Me</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
     
     <!-- About Me Section -->
     <section id="about" class="section d-flex text-white bg-gradient">
