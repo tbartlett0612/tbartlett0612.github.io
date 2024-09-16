@@ -29,6 +29,27 @@
         .menu{
             background-color: transparent;
         }
+        .navbar {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+        .navbar a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+
         /* The side navigation menu */
         .sidenav {
           height: 100%; /* 100% Full-height */
@@ -132,9 +153,10 @@
         <a href="#">Contact</a>
     </div>
     <!-- Use any element to open the sidenav -->
-    <div class="sticky-top menu">
+    <nav class="navbar">
         <button class="btn btn-primary" onclick="openNav()">Menu</button>
-    </div> 
+    </nav>
+     
 
     <!-- Intro Section -->
     <section id="intro" class="section-intro d-flex align-items-center text-white">
