@@ -64,12 +64,6 @@
           margin-left: 50px;
         }
 
-        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-        #main {
-          transition: margin-left .5s;
-          padding: 20px;
-        }
-
         /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
         @media screen and (max-height: 450px) {
           .sidenav {padding-top: 15px;}
@@ -136,7 +130,7 @@
     </div>
 
     <!-- Use any element to open the sidenav -->
-    <button class="btn" onclick="openNav()"><i class="bi bi-menu-button"></i></button>
+    <button class="btn sticky-top" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
     
 
     <!-- Intro Section -->
