@@ -26,12 +26,12 @@ u<!DOCTYPE html>
             background-size: cover;
             background-position: center;
         }
-        .menu {
+        .navbar {
             position: fixed;
             left: 0;
             z-index: 1000;
         }
-        .menu {
+        .navbar a {
             display: block;
             margin-bottom: 10px;
             padding: 10px;
@@ -41,7 +41,7 @@ u<!DOCTYPE html>
             text-align: center;
             border-radius: 50%;
         }
-        .menu:hover {
+        .navbar a:hover {
             background-color: #555;
             color: white;
         }
@@ -150,8 +150,8 @@ u<!DOCTYPE html>
         <a href="#contact">Contact Me</a>
     </div>
     <!-- Use any element to open the sidenav -->
-    <nav class="menu">
-        <button class="btn menu" onclick="openNav()">Menu</button>
+    <nav class="navbar">
+        <button class="btn btn-primary" onclick="openNav()">Menu</button>
     </nav>
      
 
